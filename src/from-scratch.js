@@ -67,7 +67,7 @@ const letterCaseCounts = (str) => {
     neither: 0,
   };
 
-  let bannedstr = [
+  let list_of_neithers = [
     "1",
     "2",
     "3",
@@ -101,7 +101,7 @@ const letterCaseCounts = (str) => {
   ]; //There's definitely a much easier way to do this ;-;
 
   for (let i = 0; i < str.length; i++) {
-    if (bannedstr.includes(str[i])) {
+    if (list_of_neithers.includes(str[i])) {
       cases.neither++;
       continue;
     } else if (str[i] === str[i].toUpperCase()) {
@@ -122,16 +122,16 @@ const letterCaseCounts = (str) => {
 
 const getNamesOfGreedyGnomes = (gnomes) => {
   // Your code here
-  let greedy = [];
+  let greedyGnomes = [];
 
   for (let i = 0; i < gnomes.length; i++) {
     console.log(gnomes[i]);
     if (gnomes[i].stolenDecorations.length > 1) {
-      greedy.push(gnomes[i].name);
+      greedyGnomes.push(gnomes[i].name);
     }
   }
 
-  return greedy;
+  return greedyGnomes;
 };
 
 // ============================================
