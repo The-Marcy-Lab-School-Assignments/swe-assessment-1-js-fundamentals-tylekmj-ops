@@ -20,7 +20,7 @@
   - The bugs you found (what's wrong and why)
   - The fixes you implemented
 
-  ADD YOUR LOOM LINK HERE: __________
+  ADD YOUR LOOM LINK HERE: https://www.loom.com/share/8c9e99e97793466dbe7756b138323b54?sid=65e7e1e5-70de-487c-b451-f622ab144859
 */
 
 const players = [
@@ -86,7 +86,7 @@ increaseScore("Morgan")
 console.log(players);
 console.log(getTopScorer());
 
-// https://www.loom.com/share/8c9e99e97793466dbe7756b138323b54?sid=65e7e1e5-70de-487c-b451-f622ab144859
+
 
 // ============================================
 // Exports
