@@ -72,12 +72,17 @@ sum(100, 200, 800, 1, 1, 1); // 1103;
 
 This function returns the sum of all the numbers inside the **rest parameter** by looping through however many numbers the rest parameter array have using .length since rest parameters has an infinite value and just adding them to the total.
 
+MDN Reference:
+[Rest Parameters – MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
 
 ### Question 5
+
 
 ### Question 6
 
 ### Question 7
+
 
 ### Question 8
 
