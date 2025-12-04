@@ -1,6 +1,7 @@
 # Mod 1 Assessment
 
 **Table of Contents:**
+
 - [Assessment Overview](#assessment-overview)
   - [Setup Instructions](#setup-instructions)
   - [Running Tests \& Linter for Code Style](#running-tests--linter-for-code-style)
@@ -59,7 +60,7 @@ mod-1-assessment/
     └── debug.test.js                 # Tests for Section 3
 ```
 
---- 
+---
 
 ### Setup Instructions
 
@@ -92,27 +93,31 @@ npm test
 
 You should see tests running (most will fail initially - that's expected!).
 
---- 
+---
 
 ### Running Tests & Linter for Code Style
 
 **Run all tests:**
+
 ```bash
 npm test
 ```
 
 **Run tests for a specific section:**
+
 ```bash
 npm test from-scratch
 npm test debug
 ```
 
 **Run tests in watch mode (re-runs on file changes):**
+
 ```bash
 npm test -- --watch
 ```
 
 **Check for linting errors:**
+
 ```bash
 npm run lint
 ```
@@ -124,6 +129,7 @@ npm run lint
 Before submitting your assessment, go through this checklist to ensure you haven't missed any critical details!
 
 **Submission Checklist:**
+
 - [ ] All questions in `src/short-response.md` are answered
 - [ ] All functions in `src/from-scratch.js` are written
 - [ ] All bugs in `src/debug.js` are fixed
@@ -137,17 +143,17 @@ Before submitting your assessment, go through this checklist to ensure you haven
 **How to Submit:**
 
 1. Commit your changes:
-  
-    ```bash
-    git add -A
-    git commit -m "Complete Mod 1 Assessment"
-    ```
+
+   ```bash
+   git add -A
+   git commit -m "Complete Mod 1 Assessment"
+   ```
 
 2. Push to GitHub:
-   
-    ```bash
-    git push
-    ```
+
+   ```bash
+   git push
+   ```
 
 3. Create a pull request to merge `draft` into `main` and tag your instructor for review.
 
@@ -161,18 +167,21 @@ Before submitting your assessment, go through this checklist to ensure you haven
 ### What Resources Can I Use?
 
 **Allowed Resources:**
+
 - ✅ MDN Documentation
 - ✅ Your notes from class
 - ✅ Previous assignments and labs
 - ✅ Running code in Node to test ideas
 
 **NOT Allowed:**
+
 - ❌ AI tools (ChatGPT, Claude, Copilot, etc.)
 - ❌ Asking classmates for help
 - ❌ Searching for solutions online
 - ❌ Posting questions on Stack Overflow, Reddit, etc.
 
 **If You're Stuck:**
+
 - Read the error messages carefully
 - Check the test files to understand what's expected
 - Use `console.log()` to debug your code
@@ -201,11 +210,12 @@ A: A few seconds over is fine. Just avoid excessive rambling.
 **Q: Can I resubmit if I'm not happy with my score?**
 A: Talk to your instructor about retake options.
 
---- 
+---
 
 ### Good Luck! 🚀
 
 Remember:
+
 - Read all instructions carefully before starting
 - Don't spend too much time on one question - move on and come back
 - Save your work frequently (`git commit` regularly)
@@ -220,7 +230,7 @@ If you have questions about the instructions (not the content), ask an instructo
 **Instructions:**
 
 1. Open `src/short-response.md`
-2. The question prompts are included in the file. 
+2. The question prompts are included in the file.
 3. Answer all 8 questions directly in the markdown file below the text **Your Answer:**
 4. Use proper markdown formatting:
    - Wrap code in triple backticks (\`\`\`javascript)
@@ -228,15 +238,17 @@ If you have questions about the instructions (not the content), ask an instructo
 5. Check your spelling and grammar
 6. Be sure to answer ALL parts of each question
 
-**Grading:** 
+**Grading:**
 
 You can earn up to 6 points on each question
+
 - Technical Score (3 points): Accuracy, completeness, use of proper terminology
 - Writing Quality (3 points): Grammar, spelling, markdown formatting, clarity
 
 For more details, refer to the [Rubric](./rubric.md).
 
 **Tips:**
+
 - Use technical vocabulary (e.g., "block scope", "reference type", "pure function") to receive full credit.
 - Explain your reasoning clearly and concisely. It should be easy to understand what point you're making!
 - Provide code examples when asked and explain how they relate to your answer afterwards.
@@ -245,22 +257,22 @@ For more details, refer to the [Rubric](./rubric.md).
 
 ### Question 1
 
-The following block of code throws an error. *Without running it:*
+The following block of code throws an error. _Without running it:_
 
-* Identify the kind of error it throws  
-* Explain why it is thrown.  
-* Suggest a fix to avoid the error
+- Identify the kind of error it throws
+- Explain why it is thrown.
+- Suggest a fix to avoid the error
 
 ```javascript
 const react = (isReuben) => {
   if (isReuben) {
-    let currentStatus = 'Everything is just fine';
+    let currentStatus = "Everything is just fine";
   } else {
-    let currentStatus = 'Time to panic.'
+    let currentStatus = "Time to panic.";
   }
-  
+
   console.log(currentStatus);
-}
+};
 
 react(true);
 ```
@@ -281,12 +293,12 @@ console.log(theGOAT.name);
 What does the following code log? Explain why.
 
 ```javascript
-const theHustler = 'Laisha';
+const theHustler = "Laisha";
 
 const shoutOut = () => {
-  const theHustler = 'Paul';
+  const theHustler = "Paul";
   console.log(`${theHustler} is the hardest working person in the room.`);
-}
+};
 
 shoutOut();
 console.log(`${theHustler} is also the hardest working person in the room.`);
@@ -298,9 +310,9 @@ In a few paragraphs, give a brief lesson on the topic of **rest parameters** (lo
 
 In your lesson, be sure to cover the following:
 
-* What is the purpose of "rest parameters"?  
-* How do we turn a parameter into a rest parameter and use them in functions? 
-* Illustrate the use of rest parameters by writing a function called `sum` that takes *any* number of integers as arguments and returns their sum.
+- What is the purpose of "rest parameters"?
+- How do we turn a parameter into a rest parameter and use them in functions?
+- Illustrate the use of rest parameters by writing a function called `sum` that takes _any_ number of integers as arguments and returns their sum.
 
 ```javascript
 sum(1, 2, 10); // 13
@@ -312,10 +324,10 @@ sum(100, 200, 800, 1, 1, 1); // 1103;
 
 Imagine you are teaching a brand new programmer a brief lesson about **scope**. Your lesson should have the following components:
 
-* A definition of scope.
-* An analogy ("You can think of scope like ...")  
-* A short code snippet that demonstrates scope (make sure to wrap it in triple backticks)  
-* An explanation of your example  
+- A definition of scope.
+- An analogy ("You can think of scope like ...")
+- A short code snippet that demonstrates scope (make sure to wrap it in triple backticks)
+- An explanation of your example
 
 For each section, use clear and concise language. Double check spelling and grammar.
 
@@ -323,9 +335,9 @@ For each section, use clear and concise language. Double check spelling and gram
 
 Imagine you are teaching a brand new programmer a brief lesson about **modules**. Your lesson should have the following components:
 
-* A definition of modules in your own words.
-* An explanation of the benefits of using modules in your code.
-* An example showing how to export and import modules in Node along with an explanation of the example. 
+- A definition of modules in your own words.
+- An explanation of the benefits of using modules in your code.
+- An example showing how to export and import modules in Node along with an explanation of the example.
 
 For each section, use clear and concise language. Double check spelling and grammar.
 
@@ -338,15 +350,15 @@ const removeLastPurely = (arr) => {
   const arr = [...arr];
   arrCopy.pop();
   return arrCopy;
-}
+};
 
-const fruits = ['apple', 'banana', 'cherry', 'date'];
+const fruits = ["apple", "banana", "cherry", "date"];
 const fruitsMinusOne = removeLastFrom(fruits);
 ```
 
 After this code runs, explain what values will be held by `fruits` and `fruitMinusOne`.
 
-Then, explain why it is necessary to make a copy of the array in order to make it a pure function. 
+Then, explain why it is necessary to make a copy of the array in order to make it a pure function.
 
 Finally, explain why we would want to avoid mutating the input array itself (why would we want the function to be pure?).
 
@@ -356,9 +368,9 @@ You are a developer on an e-commerce website (like Amazon.com). Your job is to w
 
 Answer the following questions:
 
-* What data type(s) would you use to represent a single item in the cart? Why?  
-* What data type(s) would you use to represent the entire shopping cart that holds those items? Why?  
-* Provide a hard-coded example of a `shoppingCart` with multiple items to support your explanation.
+- What data type(s) would you use to represent a single item in the cart? Why?
+- What data type(s) would you use to represent the entire shopping cart that holds those items? Why?
+- Provide a hard-coded example of a `shoppingCart` with multiple items to support your explanation.
 
 ---
 
@@ -367,31 +379,35 @@ Answer the following questions:
 **File:** `src/from-scratch.js`
 
 **Instructions:**
+
 1. Open `src/from-scratch.js`
 2. Write each function according to the specifications listed below
 3. Run tests frequently to check your work:
-   
-  ```bash
-  npm test from-scratch
-  ```
+
+```bash
+npm test from-scratch
+```
+
 4. Make sure your code is clean and readable
 
-**Grading:** 
+**Grading:**
 
 You can earn up to 4 points on each question:
+
 - Algorithm Score (3 points): Does your code pass all tests?
 - Code Style (1 point): Clean code with no linting errors, descriptive variable names, no unused code
 
 For more details, refer to the [Rubric](./rubric.md).
 
 **Tips:**
+
 - Read the instructions carefully - pay attention to exact wording
 - Test your code frequently
 - Use descriptive variable names (not just `x`, `y`, `arr`)
 - Read error messages - they tell you what's wrong!
 - Remove any commented-out code in your completed solutions before submitting
 - Run the linter to check for style issues:
-  
+
   ```bash
   npm run lint
   ```
@@ -412,12 +428,13 @@ This function does not need to return anything.
 Examples:
 
 ```js
-petJudger('dog', 'frida'); // Prints "I love dogs! frida is so cute!"
-petJudger('panda', 'joe'); // Prints "What an...interesting pet."
-petJudger('panda'); // Prints "Missing information. Please provide a valid pet."
+petJudger("dog", "frida"); // Prints "I love dogs! frida is so cute!"
+petJudger("panda", "joe"); // Prints "What an...interesting pet."
+petJudger("panda"); // Prints "Missing information. Please provide a valid pet."
 ```
 
 ### From Scratch 2: loopFromOneUpToAnother
+
 Write a function `loopFromOneUpToAnother(firstNum, secondNum)` that takes 2 arguments: a number `firstNum` and a number `secondNum`. print out each number, with the first arg being inclusive, and the second arg being exclusive. Use the tests to determine what to do if the numbers are equal or the second is smaller.
 
 This function does not need to return anything.
@@ -443,18 +460,18 @@ Examples:
 
 ```js
 /* Correct Examples: */
-shoutEveryLetterForLoop('hey');
+shoutEveryLetterForLoop("hey");
 // H!
 // E!
 // Y!
 
-shoutEveryLetterForLoop('');
+shoutEveryLetterForLoop("");
 
 /* Incorrect Examples: */
-shoutEveryLetterForLoop('hey');
+shoutEveryLetterForLoop("hey");
 // HEY!
 
-shoutEveryLetterForLoop('hey');
+shoutEveryLetterForLoop("hey");
 // H!E!Y!
 ```
 
@@ -463,6 +480,7 @@ Notice how each letter is printed on its own line, not all together.
 ### From Scratch 4: letterCaseCounts
 
 Write a function that takes a string, and returns an object containing the following three properties:
+
 - The number of characters in the string that are lowercase letters
 - The number of characters that are uppercase letters
 - The number of characters that are neither
@@ -470,17 +488,18 @@ Write a function that takes a string, and returns an object containing the follo
 You may assume that the string will always contain at least one character.
 
 ```js
-letterCaseCounts('abCdef 123');
+letterCaseCounts("abCdef 123");
 // { lowercase: 5, uppercase: 1, neither: 4 }
 
-letterCaseCounts('AbCd +Ef');
+letterCaseCounts("AbCd +Ef");
 // { lowercase: 3, uppercase: 3, neither: 2 }
 
-letterCaseCounts('123');
+letterCaseCounts("123");
 // { lowercase: 0, uppercase: 0, neither: 3 }
 ```
 
 ### From Scratch 5: getNamesOfGreedyGnomes
+
 Write a function `getNamesOfGreedyGnomes(gnomes)` that takes in an array `gnomes` of garden gnome objects. Each gnome looks like this:
 
 ```js
@@ -492,9 +511,9 @@ Write a function `getNamesOfGreedyGnomes(gnomes)` that takes in an array `gnomes
 }
 ```
 
-A gnome is considered "greedy" if it has stolen *more than* one decoration.
+A gnome is considered "greedy" if it has stolen _more than_ one decoration.
 
-You must return an array of only the *names* of each "greedy" garden gnome.
+You must return an array of only the _names_ of each "greedy" garden gnome.
 
 If the provided array of `gnomes` is empty, return an empty array.
 
@@ -503,28 +522,28 @@ Examples:
 ```js
 const gnomes = [
   {
-    name: 'Garbeldel',
+    name: "Garbeldel",
     gardenCount: 2,
     age: 407,
-    stolenDecorations: ['chair', 'fountain', 'statue'],
+    stolenDecorations: ["chair", "fountain", "statue"],
   },
   {
-    name: 'Farbus',
+    name: "Farbus",
     gardenCount: 3,
     age: 281,
-    stolenDecorations: ['greek statue'],
+    stolenDecorations: ["greek statue"],
   },
   {
-    name: 'Peekle',
+    name: "Peekle",
     gardenCount: 3,
     age: 101,
     stolenDecorations: [],
   },
   {
-    name: 'Jorbles',
+    name: "Jorbles",
     gardenCount: 3,
     age: 900,
-    stolenDecorations: ['wind chimes', 'mini golfer'],
+    stolenDecorations: ["wind chimes", "mini golfer"],
   },
 ];
 
@@ -538,6 +557,7 @@ getNamesOfGreedyGnomes([]); // Returns []
 **File:** `src/debug.js`
 
 **Instructions:**
+
 1. Open `src/debug.js`
 2. Fix the 3 broken functions
 3. Run tests to verify your fixes:
@@ -548,18 +568,21 @@ getNamesOfGreedyGnomes([]); // Returns []
 **Grading**
 
 You can earn up to 1 point on each question.
+
 - 1 point per passing test (auto-graded)
 
 For more details, refer to the [Rubric](./rubric.md).
 
 **Tips:**
+
 - Read the comments in the file - they explain what's wrong
 - The fixes are usually small (1-3 lines changed)
 - Make sure you understand WHY the code was broken
 - Test after each fix
 
 ### Debug 1: fixVariables
-In `debug.js` we have the `fixVariables(temp)` function that's trying to print and return a message, but isn't working. 
+
+In `debug.js` we have the `fixVariables(temp)` function that's trying to print and return a message, but isn't working.
 
 Could you please fix this so the tests pass?
 
@@ -570,18 +593,18 @@ In `debug.js` we have `doubleAllItemsPurely(arr)` which should take in an array 
 Current Behavior:
 
 ```js
-const nums = [1,2,3];
-const doubled = doubleAllItemsPurely(nums)
-console.log(nums);    // [2, 4, 6]
+const nums = [1, 2, 3];
+const doubled = doubleAllItemsPurely(nums);
+console.log(nums); // [2, 4, 6]
 console.log(doubled); // [2, 4, 6]
 ```
 
 Expected Behavior:
 
 ```js
-const nums = [1,2,3];
-const doubled = doubleAllItemsPurely(nums)
-console.log(nums);    // [1, 2, 3]
+const nums = [1, 2, 3];
+const doubled = doubleAllItemsPurely(nums);
+console.log(nums); // [1, 2, 3]
 console.log(doubled); // [2, 4, 6]
 ```
 
@@ -594,14 +617,14 @@ Can you correct this so the tests pass?
 Current Behavior:
 
 ```js
-sumArray([1,2,3,4,5]);
+sumArray([1, 2, 3, 4, 5]);
 // returns 0
 ```
 
 Expected Behavior:
 
 ```js
-sumArray([1,2,3,4,5])
+sumArray([1, 2, 3, 4, 5]);
 // returns 15
 ```
 
@@ -609,9 +632,10 @@ sumArray([1,2,3,4,5])
 
 **File:** `src/modify-with-video.js`
 
-**Grading:** 
+**Grading:**
 
 You can earn up to 10 points for this question.
+
 - Bug Identification (3 points): 1 point per bug correctly identified
 - Bug Fixes (3 points): 1 point per working fix
 - Video Quality (4 points):
@@ -632,14 +656,16 @@ For more details, refer to the [Rubric](./rubric.md).
 - It's okay to refer to notes during recording!
 
 ### Part 1: Code Analysis (Do this FIRST, before fixing anything)
+
 1. Open `src/modify-with-video.js`
 2. Read the code carefully
 3. Answer these questions (write them down - you'll need them for your video):
    - What expectations do you have about the program?
-   - What is this program supposed to output? 
+   - What is this program supposed to output?
    - Calculate it by hand if you need to!
 
 ### Part 2: Observe
+
 1. Run the code to see what happens:
    ```bash
    node src/modify-with-video.js
@@ -647,6 +673,7 @@ For more details, refer to the [Rubric](./rubric.md).
 2. Take note of errors and anything that doesn't meet your expectations (write them down - you'll need this for your video)
 
 ### Part 3: Find and Fix Bugs
+
 1. Identify **3 bugs** in the code
 2. For each bug, write down:
    - What line it's on
@@ -659,8 +686,8 @@ For more details, refer to the [Rubric](./rubric.md).
    ```
 
 ### Part 4: Record Your Video (2-4 minutes)
+
 1. Use **Loom** to record your screen. For instructions on downloading Loom, refer to the [Marcy GitBook](https://marcylabschool.gitbook.io/marcy-lab-school-docs/environment-setup/loom).
-   
 2. In your video, explain:
    - What you expected the code to do (from Part 1)
    - The 3 bugs you found:
@@ -668,8 +695,8 @@ For more details, refer to the [Rubric](./rubric.md).
      - What's wrong
      - Why it causes a problem
    - The fixes you implemented
-   
 3. Use proper technical vocabulary:
+
    - ✅ "greater than operator" (not "right arrow")
    - ✅ "assignment operator" (not "equal sign")
    - ✅ "strict equality operator" (not "three equal signs")
