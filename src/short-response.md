@@ -40,7 +40,7 @@ Now that the variable is declared at the start of the function, We wont have to 
 
 The following code will print `"Michael Jordan"` because even though we're mutating the bestPlayer variable, theGOAT will also be mutated aswell since we previously made theGOAT equal to bestPlayer because both variables are objects and objects are reference types which means any object assigned to another object will share the exact same data even if you change one of them afterwards.
 
-### Question 3 GO BACK TO THIS QUESTION!!!
+### Question 3
 
 The following code will print 2 things:
 
@@ -62,7 +62,7 @@ const sum = (...arg) => {
     total += arg[i];
   }
 
-  return total
+  return total;
 };
 
 sum(1, 2, 10); // 13
@@ -75,40 +75,92 @@ This function returns the sum of all the numbers inside the **rest parameter** b
 MDN Reference:
 [Rest Parameters – MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
-
 ### Question 5
 
+In programming, a **scope** is what determines how **data** is **declared** and where that data can be accessed or used. It's kind of like the sight of the program like what the program looks at when declaring things like a **variable** or **function** depending on the context.
+
+```js
+let mynum = 4;
+
+const changenum = () => {
+  mynum = 6;
+  console.log(mynum);
+};
+
+console.log(mynum); //Outputs mynum as 4
+changenum(); //Outputs mynum as 6
+```
 
 ### Question 6
 
+In programming, modules are basically files you use to write your code in. An example of this would be a .js file like index.js. A module can also be imported which allows programmers to use code from one module in another which helps with organization and stops you from having 50000 lines of code in one module which can also help if you're collaborating since it makes it easier for others to read your code.
+
+## math.js
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
+
+module.exports = math;
+```
+
+## calculator.js
+
+```js
+const add = require("./math");
+
+console.log(add(3, 4));
+console.log(subtract(3, 4));
+console.log(divide(3, 4));
+console.log(multiply(3, 4));
+```
+
 ### Question 7
 
+The `fruits` **array** will hold 4 **strings** `apple`, `banana`, `cherry`, and `date`. and the `fruitMinusOne` **variable** will just hold an array with the same strings as the `fruits` away minus the `date` string since the `pop()` method removes the last **element** of the array.
+
+Inside the `removeLastPurely()` function, a copy of the `fruits` array using the **spread operator** is made to use the `pop` method on instead of the original fruits array, which is necessary to make `removeLastPurely()` a pure function since using the pop method on the original array will **mutate** that array.
+
+We'd want this function to be **pure** and not mutate our `fruits` away because having our functions be pure makes our code more predictable. If we made our function unintentionally mutate the `fruits` array then that'll lead to confusion for if you wanted to use the `fruits` array for something outside the function. Like if you wanted to store `fruits[3]` inside of a variable for example but you got an error because your **impure** function uses `pop()` and changes your `fruits` array unintentionally.
 
 ### Question 8
 
-If I were making an e-commercec website with functionality. I would make a single item an object because items have multiple properties such as name, price, onsale?, how many of those items are on stock, etc. If i were to use a data type to represent the entire shopping cart then it'd be an array because I wouldn't need anymore information or properties since each individual item is already an object.
+If I were making an e-commerce website with functionality. I would make a single item an object because items have multiple properties such as name, price, onsale?, how many of those items are on stock, etc. If i were to use a data type to represent the entire shopping cart then it'd be an array because I wouldn't need anymore information or properties since each individual item is already an object.
 
 ```js
 let brush = {
-    name: brush,
-    price: 9.99,
-    onsale: false,
-    quantity: 25,
-}
+  name: brush,
+  price: 9.99,
+  onsale: false,
+  quantity: 25,
+};
 
 let apple = {
-    name: brush,
-    price: 1.99,
-    onsale: false,
-    quantity: 105,
-}
+  name: brush,
+  price: 1.99,
+  onsale: false,
+  quantity: 105,
+2
 
 let deodorant = {
-    name: deodorant,
-    price: 12.99,
-    onsale: true,
-    quantity: 12,
-}
+  name: deodorant,
+  price: 12.99,
+  onsale: true,
+  quantity: 12,
+};
 
-const shoppingCart = [brush, deodorant]
+const shoppingCart = [brush, deodorant];
 ```
